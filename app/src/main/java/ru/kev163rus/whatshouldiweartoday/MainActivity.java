@@ -1,12 +1,19 @@
 package ru.kev163rus.whatshouldiweartoday;
 
-import android.support.v7.app.AppCompatActivity;
+import android.graphics.Typeface;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.content.ContextCompat;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+
+
+public class MainActivity extends FragmentActivity implements View.OnClickListener {
+
+    private TextView tvLogo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +24,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_main);
+
+        tvLogo = (TextView) findViewById(R.id.tvLogo);
+        tvLogo.setShadowLayer(10f, 60f, 30f, ContextCompat.getColor(this, R.color._myColor_1));
+        tvLogo.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/cheshirskiycat.ttf"));
     }
 
     @Override
