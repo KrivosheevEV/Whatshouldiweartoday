@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="ru.kev163rus.whatshouldiweartoday.MainActivity"
@@ -26,7 +27,9 @@
             android:textStyle="bold"
             android:textSize="56sp"
             android:textColor="@color/_myColor_4"
-            android:gravity="center" />
+            android:gravity="center"
+            android:textColorLink="@color/_myColor_5_1"
+            android:layout_margin="15dp" />
 
         <Button
             android:id="@+id/buttonStart"
@@ -38,19 +41,21 @@
             android:textColor="@color/_myColor_4"
             android:textStyle="bold"
             android:textSize="26sp"
-            android:textScaleX="1.8" />
+            android:textScaleX="1.8"
+            android:layout_margin="10dp" />
 
         <Button
+            android:id="@+id/buttonExit"
             android:text="@string/butExit_text"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:id="@+id/buttonExit"
             android:layout_weight="15"
             android:background="@drawable/but_exit"
             android:textColor="@color/_myColor_4"
             android:textStyle="bold"
             android:textSize="26sp"
-            android:textScaleX="1.8" />
+            android:textScaleX="1.8"
+            android:layout_margin="10dp" />
 
     </LinearLayout>
 

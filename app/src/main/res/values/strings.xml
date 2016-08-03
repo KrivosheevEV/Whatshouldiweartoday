@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Whatshouldiweartoday</string>
+    <string name="app_name">WhatShouldIWearToday</string>
     <string name="butStart_Text">Start</string>
     <string name="butExit_text">Exit</string>
     <string name="tv_Logo">Whats Should I Wear Today?</string>

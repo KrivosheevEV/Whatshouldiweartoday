@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Whatshouldiweartoday</string>
+    <string name="app_name">WhatShouldIWearToday</string>
     <string name="butExit_text">Выход</string>
     <string name="butStart_Text">Начать</string>
+    <string name="tv_Logo">Что мне сегодня одеть?</string>
 </resources>
